@@ -1,0 +1,14 @@
+version: '3'
+services:
+  hello-world-demo:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: hello-world-demo
+    container_name: hello-world-demo
+    environment:
+      XDEBUG_CONFIG: client_host=host.docker.internal client_port=9001 remote_enable=1 start_with_request = yes mode=debug dekey=VSCODE
+    ports:
+      - '8080:80'
+    volumes:
+        - './src:/var/www/html'
