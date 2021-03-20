@@ -33,3 +33,10 @@
 2ºlanzar dockers
 
      docker-compose --env-file ../.env  up -d 
+
+
+#important 
+
+in docker composer need use another ip for linux 
+-host.docker.internal only mac and windows
+-172.17.0.1 linux
