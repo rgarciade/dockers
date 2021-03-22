@@ -1,6 +1,8 @@
 # mysql 
 
 -docker para lanzar un mysql en el puerto 3006
+# debug
+     server apache xdebug
 
 # serverMysqlAppNginx
      #preparado con 
@@ -11,6 +13,8 @@
      -node
      -mysql
      -nginx
+     -xdebug
+     
 
 ## nuevo dev
 
